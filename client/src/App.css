@@ -1,0 +1,152 @@
+.App {
+  display: flex;
+  margin: 20px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  width: 320px;
+}
+input,
+select {
+  width: 300px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+select {
+  width: 318px;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  margin: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.addBtn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.updateBtn {
+  background-color: rgba(4, 0, 255, 0.774);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.deleteBtn {
+  background-color: rgba(255, 0, 0, 0.774);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+}
+
+.btnHeadTh {
+  width: 150px;
+}
+
+.btnTh {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+#table-wrapper {
+  position: relative;
+  margin-left: 30px;
+  width: 100%;
+}
+#table-scroll {
+  height: 465px;
+  overflow: auto;
+  margin-top: 20px;
+}
+#table-wrapper table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table-wrapper table td,
+#table-wrapper table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#table-wrapper table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.updateModal {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalUpdateBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
